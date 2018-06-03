@@ -1,18 +1,16 @@
 {
-  "name": "set-value",
-  "description": "Create nested values and any intermediaries using dot notation (`'a.b.c'`) paths.",
-  "version": "3.0.0",
-  "homepage": "https://github.com/jonschlinkert/set-value",
-  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "name": "vue-set-value",
+  "description": "Vue.set with dot notation support (`'a.b.c'`) paths.",
+  "version": "1.0.0",
+  "homepage": "https://github.com/yarsky-tgz/vue-set-value",
+  "author": "Yaroslav Dobzhanskij <merlyn.tgz@gmail.com>",
   "contributors": [
+    "Yaroslav Dobzhanskij <merlyn.tgz@gmail.com>",
     "Jon Schlinkert (http://twitter.com/jonschlinkert)",
     "(https://github.com/wtgtybhertgeghgtwtg)",
     "Vadim Demedes (https://vadimdemedes.com)"
   ],
-  "repository": "jonschlinkert/set-value",
-  "bugs": {
-    "url": "https://github.com/jonschlinkert/set-value/issues"
-  },
+  "repository": "yarsky-tgz/vue-set-value",
   "license": "MIT",
   "files": [
     "index.js"
@@ -25,7 +23,8 @@
     "test": "mocha"
   },
   "dependencies": {
-    "is-plain-object": "^2.0.4"
+    "is-plain-object": "^2.0.4",
+    "vue": "^2.5.16"
   },
   "devDependencies": {
     "benchmarked": "^2.0.0",
@@ -46,7 +45,7 @@
     "write": "^1.0.3"
   },
   "keywords": [
-    "bury",
+    "vue",
     "deep-get-set",
     "deep-object",
     "deep-property",

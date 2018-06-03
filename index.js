@@ -1,13 +1,5 @@
-/*!
- * set-value <https://github.com/jonschlinkert/set-value>
- *
- * Copyright (c) 2014-2018, Jon Schlinkert.
- * Released under the MIT License.
- */
-
+const Vue = require('vue');
 'use strict';
-
-const isPlain = require('is-plain-object');
 
 function set(target, path, value, options) {
   if (!isObject(target)) {
@@ -38,7 +30,7 @@ function set(target, path, value, options) {
     let prop = keys[i];
 
     if (!isObject(target[prop])) {
-      target[prop] = {};
+      Vue.set(target, prop, {});
     }
 
     if (i === len - 1) {
@@ -53,10 +45,10 @@ function set(target, path, value, options) {
 }
 
 function result(target, path, value, merge) {
-  if (merge && isPlain(target[path]) && isPlain(value)) {
-    target[path] = merge({}, target[path], value);
+  if (merge && isObject(target[path]) && isObject(value)) {
+    Vue.set(target, path, merge({}, target[path], value));
   } else {
-    target[path] = value;
+    Vue.set(target, path, value);
   }
 }
 
