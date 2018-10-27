@@ -1,7 +1,7 @@
 'use strict';
 import Vue from 'vue';
 
-function set(target, path, value, options) {
+export default function set(target, path, value, options) {
   if (!isObject(target)) {
     return target;
   }
@@ -105,4 +105,4 @@ function isObject(val) {
 }
 
 set.memo = {};
-module.exports = set;
+
