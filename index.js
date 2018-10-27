@@ -1,5 +1,5 @@
-const Vue = require('vue');
 'use strict';
+import Vue from 'vue';
 
 function set(target, path, value, options) {
   if (!isObject(target)) {
