@@ -1,7 +1,7 @@
 {
   "name": "vue-set-value",
   "description": "Vue.set with dot notation support (`'a.b.c'`) paths.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "homepage": "https://github.com/yarsky-tgz/vue-set-value",
   "author": "Yaroslav Dobzhanskij <merlyn.tgz@gmail.com>",
   "contributors": [

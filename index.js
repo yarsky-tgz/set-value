@@ -1,5 +1,4 @@
 'use strict';
-import Vue from 'vue';
 
 export default function set(target, path, value, options) {
   if (!isObject(target)) {
